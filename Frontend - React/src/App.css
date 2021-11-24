@@ -1,0 +1,297 @@
+@font-face {
+    
+  font-family: "BalsamiqSans"; 
+  
+  src: url("BalsamiqSans-Regular.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  } 
+
+  *, ::after, ::before {
+    box-sizing: border-box;
+}
+
+* {
+  font-family: BalsamiqSans;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body, header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 60px;
+  text-align: center;
+
+}
+
+.control {
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+
+.inpTD {
+  margin: 10px 0;
+  width: 1000px;
+  height: 30px;
+}
+
+.tds {
+  margin-top: 30px;
+  width: 560px;
+  
+}
+
+.inputForEdit {
+  bottom: 23px;
+  height: 25px;
+  left: 23px
+
+}
+
+.td {
+  display: flex;
+  justify-content: space-between;
+  border-style: solid;
+  border-color: rgb(206, 206, 206);
+  border-width: 2px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-top: 3px;
+  height: 35px;
+}
+
+.btnD {
+  width: 20px;
+  height: 20px;
+}
+
+.btnD:active {
+  background-color: rgb(175, 174, 174);
+}
+
+.active {
+  background-color: #f1f1f1;
+  
+}
+
+.date {
+  font-size: 20px;
+}
+
+.btnAdd {
+  height: 30px;
+}
+
+.lbltext {
+  font-size: 12px;
+}
+
+.trash {
+  margin-left: 5px;
+  margin-right: 3px;
+  
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 0;
+  padding-left: 0;
+}
+
+.footer-item {
+  margin: 0 5px;
+  display: inline-block;
+  width: 15px;
+}
+
+.arrows {
+  margin: 0 5px;
+}
+
+.checkBox {
+  margin-left: 5px;
+}
+
+
+
+.dund {
+  display: flex;
+  width: 190px;
+  justify-content: space-between;
+}
+
+.lblar {
+  margin-top: 5px;
+}
+
+.done{
+  text-decoration: line-through;
+}
+
+.noTD {
+  text-align: center;
+}
+
+.page-item {
+  color:black
+}
+
+.page-link {
+  border-color:black;
+  color:black
+}
+
+.page-link:hover {
+  border-color:black;
+  color:black
+}
+
+.page-link:focus {
+  border-color:black;
+  color:black;
+  border-color:black;
+  outline: 0;
+  
+  box-shadow: inset 0 1px 1px black,0 0 8px black;
+}
+
+
+.qwe {
+  border: 0;
+  background-color: white;
+}
+
+.input-for-edit {
+  display: inline;
+  margin-left: 5px;
+  width: 15px;
+}
+
+.titleToDo {
+  font-size: 15px;
+}
+
+/* .titleToDo {
+  display: inline-block;
+  overflow-x:hidden;
+  width: 420px;
+  overflow-x:hidden;
+  text-align: left;
+} */
+
+.modal-window {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 300px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: appear;
+  animation-duration: 300ms;
+}
+
+.modal-dialog {
+  width: 100%;
+  max-width: 550px;
+  background: white;
+  position: relative;
+  margin: 0 20px;
+  max-height: calc(100vh - 40px);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slide-in;
+  animation-duration: 0.5s;
+}
+
+.modal-header,
+.modal-footer {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.modal-header {
+  border-bottom: 1px solid #dbdbdb;
+  justify-content: space-between;
+}
+.modal-footer {
+  border-top: 1px solid #dbdbdb;
+  justify-content: flex-end;
+  font-size: 13px;
+}
+.modal-close {
+  cursor: pointer;
+  padding: 1rem;
+  margin: -1rem -1rem -1rem auto;
+}
+.modal-body {
+  overflow: auto;
+}
+.modal-content {
+  padding: 1rem;
+  width: 85%;
+  font-size: 12px;
+}
+
+.btnCls {
+  background-color: red;
+}
+
+.btnCls:hover {
+  background-color: #FFF;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.ant-modal-body {
+  padding-bottom: 0px !important;
+  padding-top: 33px !important;
+}
+
+.logout {
+  margin-top: 10px;
+}
+
+.mainfooter {
+  display: flex;
+  flex-direction: column;
+
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(-150px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

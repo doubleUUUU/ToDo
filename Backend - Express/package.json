@@ -1,0 +1,37 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon index.js",
+    "start": "npx sequelize-cli db:migrate && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemSemak/Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtemSemak/Backend/issues"
+  },
+  "homepage": "https://github.com/ArtemSemak/Backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "jwt-simple": "^0.5.6",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.1",
+    "recursive-readdir-sync": "^1.0.6",
+    "sequelize": "^6.9.0",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
